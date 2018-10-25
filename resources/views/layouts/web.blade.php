@@ -45,16 +45,16 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item active">
+                            <li class="nav-item home">
                                 <a class="nav-link" href="{{ url('/') }}">HOME</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item services">
                                 <a class="nav-link" href="{{ route('services') }}">SERVICIOS</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item about">
                                 <a class="nav-link" href="{{ route('about') }}">NOSOTROS</a>
                             </li>                       
-                            <li class="nav-item">
+                            <li class="nav-item login">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
                         @else                       
@@ -142,8 +142,20 @@
       </div>
     </div>
 
-    <!-- Scripts -->
+
+    
     @yield('scripts')
+
+     <!-- Scripts -->
+    <script type="text/javascript">
+       
+
+    $(".navbar .nav-item").on("click", function(){
+        $(".nav-item").find(".active").removeClass("active");
+        $(this).addClass("active");
+    }); 
+
+    </script>
 
 </body>
 </html>

@@ -59,3 +59,11 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+<script type="text/javascript">
+
+    $(".login").addClass("active");
+
+</script>
+@endsection

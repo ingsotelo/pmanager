@@ -76,3 +76,11 @@
   </div>
 </div>
 @endsection
+
+@section('scripts')
+<script type="text/javascript">
+
+    $(".about").addClass("active");
+
+</script>
+@endsection
