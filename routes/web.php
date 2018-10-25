@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -26,7 +34,9 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('comments', 'CommentsController');
     
     Route::get('projects/create/{company_id}', 'ProjectsController@create');
+
     //Route::post('/projects/adduser', 'ProjectsController@adduser')->name('projects.adduser');
+
     Route::resource('projects', 'ProjectsController'); 
 
     Route::resource('roles', 'RolesController');
