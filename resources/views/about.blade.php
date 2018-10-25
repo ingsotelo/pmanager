@@ -41,40 +41,6 @@
     </div>
   </div>
 
-<div id="qs3">
-  <div class="container">
-    <div class="row justify-content-center">
-      <br><br>
-      <div class="col-lg-3">
-        <img src="{{ asset('img/pic.jpg') }}" class="rounded-circle mx-auto d-block shadow">
-        <h4>Frank Lampard</h4>
-        <p>Asesor fiscal en varias empresas, tanto nacionales como internacionales.</p>
-        <p><a href="#">@Frank_BlackTie</a></p>
-      </div><!-- col-lg-3 -->
-
-      <div class="col-lg-3">
-        <img src="{{ asset('img/pic2.jpg') }}" class="rounded-circle mx-auto d-block shadow">
-        <h4>David Wright</h4>
-        <p>Coordinador de vinculación con el SAT. Especialista en impuestos y finanzas publicas.</p>
-        <p><a href="#">@David_BlackTie</a></p>
-      </div><!-- col-lg-3 -->
-
-      <div class="col-lg-3">
-        <img  src="{{ asset('img/pic3.jpg') }}" class="rounded-circle mx-auto d-block shadow">
-        <h4>Mark Milestone</h4>
-        <p>Presidente de la Sociedad de Alumnos en Contaduría Pública y Finanzas.</p>
-        <p><a href="#">@Mark_BlackTie</a></p>
-      </div><!-- col-lg-3 -->
-
-      <div class="col-lg-3">
-        <img src="{{ asset('img/pic4.jpg') }}" class="rounded-circle mx-auto d-block shadow">
-        <h4>Tania Tissen</h4>
-        <p>Directora de Finanzas de la Sociedad de Alumnos en Contaduría Pública y Finanzas.</p>
-        <p><a href="#">@Tania_BlackTie</a></p>
-      </div>
-    </div>
-  </div>
-</div>
 @endsection
 
 @section('scripts')

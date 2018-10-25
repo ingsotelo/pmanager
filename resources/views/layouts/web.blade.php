@@ -45,18 +45,27 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
+
                             <li class="nav-item home">
                                 <a class="nav-link" href="{{ url('/') }}">HOME</a>
                             </li>
+
+                            <li class="nav-item about">
+                                <a class="nav-link" href="{{ route('about') }}">NOSOTROS</a>
+                            </li>
+
                             <li class="nav-item services">
                                 <a class="nav-link" href="{{ route('services') }}">SERVICIOS</a>
                             </li>
-                            <li class="nav-item about">
-                                <a class="nav-link" href="{{ route('about') }}">NOSOTROS</a>
-                            </li>                       
+
+                             <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">CONTACTO</a>
+                            </li>
+                                                   
                             <li class="nav-item login">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
+
                         @else                       
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
@@ -84,7 +93,6 @@
             <div class="col-md-8">
               <h4>ESTAMOS PARA SERVIRLE</h4>
               <p>“Somos una firma especializada en Consultoría Integral con más de 10 años de experiencia especializada en brindar los mejores servicios contables, fiscales, legales y administrativos de manera responsable y honesta a pequeñas y medianas empresas. Innovamos en cada uno de nuestros servicios para ofrecer soluciones personalizadas a tus necesidades.“</p>
-              <!-- Button trigger modal -->
               <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal"><i class="far fa-envelope"></i> Contactanos</button>
             </div>
           </div>
@@ -152,7 +160,6 @@
 
     $(".navbar .nav-item").on("click", function(){
         $(".nav-item").find(".active").removeClass("active");
-        $(this).addClass("active");
     }); 
 
     </script>
